@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import uni from "../images/uni_1.jpg";
 
 const Aboutus = () => {
   return (
@@ -97,9 +96,13 @@ const ImageBanner = styled.div`
 const ImageContainer = styled.div`
   width: 100%;
   height: 100%;
+  background-image: linear-gradient(269.34deg, rgba(151, 198, 59, 0.3) 11.9%, rgba(10, 89, 167, 0.3) 63.82%), url("https://observer.ug/images/URAs-Doris-Akol-and-other-school-officials-posing-with-the-Graduands.jpg");
   background-position: center;
-  background-image: url(${uni});
+  background-size: cover;
+  background-repeat: no-repeat;
 `;
+
+
 
 const LineSeperate = styled.div`
   background-color: yellow;
