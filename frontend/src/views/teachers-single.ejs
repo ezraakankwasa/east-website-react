@@ -183,13 +183,13 @@
           <div class="col-md-4">
             <div class="teachers-img_block">
               <img
-                src="https://www.abmak.org/sites/abmak/files/staff-photos/godfrey-akena-abmak.jpg"
+                src="<%- lecturer.lecturer_image.data.attributes.url%>"
                 class="img-fluid"
                 alt="#"
               />
               <div class="teachers-title_block">
-                <h4><strong>Akena Godfrey</strong></h4>
-                <h6>MBA, PhD</h6>
+                <h4><strong><%- lecturer.lecturer_name %></strong></h4>
+                <h6><%- lecturer.lecturer_qualification %></h6>
                 <ul>
                   <li>
                     <a href="#"
@@ -306,10 +306,6 @@
                       >
                     </h6>
                     <h6><i>Syllabus : Economics, Marketing & Finance</i></h6>
-                    <hr />
-                    <ul>
-                      <li><span>*</span>GPA:3.5/4.0</li>
-                    </ul>
                   </div>
                 </div>
               </div>

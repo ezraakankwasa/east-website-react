@@ -30,17 +30,17 @@
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" href="about.html"
+                    <a class="nav-link" href="/about"
                       >About<span class="sr-only">(current)</span></a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="admission-form.html"
+                    <a class="nav-link" href="/admissions"
                       >Admissions</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="academics.html">Academics</a>
+                    <a class="nav-link" href="/academics">Academics</a>
                   </li>
                   <li class="nav-logo">
                     <a href="#" class="navbar-brand"
@@ -48,7 +48,7 @@
                     /></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="research.html">Research</a>
+                    <a class="nav-link" href="/lecturers">Team</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a
@@ -75,7 +75,7 @@
                         <a class="dropdown-item" href="blog.html">Blog</a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="blog-post.html"
+                        <a class="dropdown-item" href="/coming-soon"
                           >Blog Post</a
                         >
                       </li>
@@ -211,8 +211,8 @@
                     <br />processes. Proactively drive.
                   </h4>
                   <div class="slider-btn">
-                    <a href="#" class="btn btn-default">SEE Programs</a>
-                    <a href="#" class="btn btn-default">Learn more</a>
+                    <a href="/academics" class="btn btn-default">SEE Programs</a>
+                    <a href="/about" class="btn btn-default">Learn more</a>
                   </div>
                 </div>
               </div>
@@ -304,16 +304,16 @@
               <div class="courses_box mb-5">
                 <div class="course-img-wrap">
                   <img
-                    src="images/courses_1.jpg"
+                    src="<%- course.attributes.course_image.data.attributes.url %>"
                     class="img-fluid"
                     alt="courses-img"
                   />
                   <div class="courses_box-img">
                     <div class="courses-link-wrap">
-                      <a href="course/<%- course.id %>" class="course-link"
+                      <a href="/academics/<%- course.id %>" class="course-link"
                         ><span>course Details </span></a
                       >
-                      <a href="admission-form.html" class="course-link"
+                      <a href="/admission" class="course-link"
                         ><span>Join today </span></a
                       >
                     </div>
@@ -328,7 +328,7 @@
                     alt="plus-icon"
                   />
                 </div>
-                <a href="course-detail.html" class="course-box-content">
+                <a href="/academics/<%- course.id %>" class="course-box-content">
                   <h3><%- course.attributes.course_title %></h3>
                   <p>
                     <%- course.attributes.short_description %>
@@ -341,7 +341,7 @@
         </div>
         <div class="row">
           <div class="col-md-12 text-center">
-            <a href="#" class="btn btn-default btn-courses">View all courses</a>
+            <a href="/academics" class="btn btn-default btn-courses">View all courses</a>
           </div>
         </div>
       </div>
@@ -354,7 +354,7 @@
           <div class="col-lg-6">
             <h2>Upcoming Events</h2>
             <div class="event-img">
-              <span class="event-img_date">06-Nov-17</span>
+              <span class="event-img_date">06-Nov-22</span>
               <img
                 src="images/upcoming-event-img.jpg"
                 class="img-fluid"
@@ -423,7 +423,7 @@
                   <div class="event_date">
                     <div class="event-date-wrap">
                       <p>06</p>
-                      <span>Nov.17</span>
+                      <span>Nov.22</span>
                     </div>
                   </div>
                   <div class="date-description">
@@ -455,7 +455,7 @@
                   <div class="event_date">
                     <div class="event-date-wrap">
                       <p>06</p>
-                      <span>Mar.17</span>
+                      <span>Mar.22</span>
                     </div>
                   </div>
                   <div class="date-description">
@@ -487,7 +487,7 @@
               />
             </div>
             <div class="chart-text">
-              <p><span class="counter">39</span> Teachers</p>
+              <p><span class="counter">8</span> Teachers</p>
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3 chart_bottom chart_top">
@@ -499,7 +499,7 @@
               />
             </div>
             <div class="chart-text">
-              <p><span class="counter">2600</span> Students</p>
+              <p><span class="counter">100</span> Students</p>
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3 chart_top">
@@ -511,7 +511,7 @@
               />
             </div>
             <div class="chart-text">
-              <p><span class="counter">56</span> Courses</p>
+              <p><span class="counter">3</span> Courses</p>
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3">
@@ -523,7 +523,7 @@
               />
             </div>
             <div class="chart-text">
-              <p><span class="counter">13</span> Years Exp.</p>
+              <p><span class="counter">20</span> Years Exp.</p>
             </div>
           </div>
         </div>
@@ -540,7 +540,7 @@
         </div>
         <div class="row">
           <div class="col-md-8">
-            <a href="blog-post.html" class="home_blog_link">
+            <a href="/coming-soon" class="home_blog_link">
               <div class="blog-img_box">
                 <img
                   src="images/blog-img_1.jpg"
@@ -550,15 +550,15 @@
                 <div class="blogtitle">
                   <h3>Eestibulum sodales</h3>
                   <i class="icon-user fa-common" aria-hidden="true"></i>
-                  <p>by: admin</p>
+                  <p>by: Festus</p>
                   <i class="icon-speedometer fa-common" aria-hidden="true"></i>
-                  <p>9- Nov-2016</p>
+                  <p>9- Nov-2022</p>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-md-4">
-            <a href="blog-post.html" class="home_blog_link">
+            <a href="/coming-soon" class="home_blog_link">
               <div class="blog-img_box">
                 <img
                   src="images/blog-img_2.jpg"
@@ -568,9 +568,9 @@
                 <div class="blogtitle">
                   <h3>Variations of passages</h3>
                   <i class="icon-user fa-common" aria-hidden="true"></i>
-                  <p>by: admin</p>
+                  <p>by: Festus</p>
                   <i class="icon-speedometer fa-common" aria-hidden="true"></i>
-                  <p>9- Nov-2016</p>
+                  <p>9- Nov-2022</p>
                 </div>
               </div>
             </a>
@@ -578,7 +578,7 @@
         </div>
         <div class="row">
           <div class="col-md-4">
-            <a href="blog-post.html" class="home_blog_link">
+            <a href="/coming-soon" class="home_blog_link">
               <div class="blog-img_box">
                 <img
                   src="images/blog-img_3.jpg"
@@ -588,15 +588,15 @@
                 <div class="blogtitle">
                   <h3>Lorem Ipsum passage</h3>
                   <i class="icon-user fa-common" aria-hidden="true"></i>
-                  <p>by: admin</p>
+                  <p>by: Festus</p>
                   <i class="icon-speedometer fa-common" aria-hidden="true"></i>
-                  <p>9- Nov-2016</p>
+                  <p>9- Nov-2022</p>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-md-4">
-            <a href="blog-post.html" class="home_blog_link">
+            <a href="/coming-soon" class="home_blog_link">
               <div class="blog_hide">
                 <i class="icon-link" aria-hidden="true"></i>
                 <p class="m-0">
@@ -605,15 +605,15 @@
                 </p>
                 <div class="blogtitle-link">
                   <i class="icon-user fa-common" aria-hidden="true"></i>
-                  <p>by: admin</p>
+                  <p>by: Festus</p>
                   <i class="icon-speedometer fa-common" aria-hidden="true"></i>
-                  <p>9- Nov-2016</p>
+                  <p>9- Nov-2022</p>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-md-4">
-            <a href="blog-post.html" class="home_blog_link">
+            <a href="/coming-soon" class="home_blog_link">
               <div class="blog-img_box">
                 <div class="blog-video">
                   <div class="blog-play_btn">
@@ -629,9 +629,9 @@
                 <div class="blogtitle">
                   <h3>Nam libero tempore</h3>
                   <i class="icon-user fa-common" aria-hidden="true"></i>
-                  <p>by: admin</p>
+                  <p>by: Festus</p>
                   <i class="icon-speedometer fa-common" aria-hidden="true"></i>
-                  <p>9- Nov-2016</p>
+                  <p>9- Nov-2022</p>
                 </div>
               </div>
             </a>
@@ -640,7 +640,7 @@
         <br />
         <div class="row">
           <div class="col-md-12 text-center">
-            <a href="#" class="btn btn-default btn-courses">VIEW ALL BLOG</a>
+            <a href="/coming-soon" class="btn btn-default btn-courses">VIEW ALL BLOG</a>
           </div>
         </div>
       </div>

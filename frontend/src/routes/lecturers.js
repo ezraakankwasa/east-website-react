@@ -1,13 +1,14 @@
 const axios = require('axios');
 const express = require('express');
 const lecturersRouter = express.Router();
+const params = new URLSearchParams('populate=%2A');
 
-lecturersRouter.get('/our-teachers', async(req, res) => {
+lecturersRouter.get('', async(req, res) => {
     try
     {
-        const coursesAPI = await axios.get(`http://localhost:1337/api/east-teams?populate=*`);
-        console.log(coursesAPI.data.data);
-        res.render('our-teachers', { teachers : coursesAPI.data.data});
+        const lecturersAPI = await axios.get(`http://localhost:1337/api/east-teams`, {params});
+        console.log(lecturersAPI.data.data);
+        res.render('our-teachers', { teachers : lecturersAPI.data.data});
     }
     catch (error)
     {

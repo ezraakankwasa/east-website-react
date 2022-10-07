@@ -181,23 +181,20 @@
     <section class="our-teachers">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <h2 class="mb-5">Style One</h2>
-          </div>
-        </div>
-        <div class="row">
             <% teachers.forEach(function(teacher, index){%>
           <div class="col-xs-12 col-sm-6 col-md-6">
             <div class="our-teachers-block">
+              <a href="teacher/<%- teacher.id %>" class="lecturer-link">
               <img
-                src="images/our-teachers_01.jpg"
+                src=<%- teacher.attributes.lecturer_image.data.attributes.url %>
                 class="img-fluid teachers-img"
                 alt="#"
               />
+            </a>
               <div class="teachers-description">
                 <p>
                   <strong><%- teacher.attributes.lecturer_name %></strong> <br />
-                  MBA, PhD
+                  <%- teacher.attributes.lecturer_qualification %>
                 </p>
                 <hr />
                 <p>
@@ -230,61 +227,6 @@
         <!-- End row -->
       </div>
     </section>
-
-    <!-- Style 2 -->
-    <section class="our-teachers">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2 class="mb-5">Style Two</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="admission_insruction">
-              <img src="images/teacher_1.jpg" class="img-fluid" alt="#" />
-              <p class="text-center mt-3">
-                <span>Frank Harvey</span>
-                <br />
-                Master of Science
-              </p>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="admission_insruction">
-              <img src="images/teacher_2.jpg" class="img-fluid" alt="#" />
-              <p class="text-center mt-3">
-                <span>Frank Harvey</span>
-                <br />
-                Master of Science
-              </p>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="admission_insruction">
-              <img src="images/teacher_3.jpg" class="img-fluid" alt="#" />
-              <p class="text-center mt-3">
-                <span>Frank Harvey</span>
-                <br />
-                Master of Science
-              </p>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="admission_insruction">
-              <img src="images/teacher_4.jpg" class="img-fluid" alt="#" />
-              <p class="text-center mt-3">
-                <span>Frank Harvey</span>
-                <br />
-                Master of Science
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- End row -->
-      </div>
-    </section>
-    <!--//End Style 2 -->
 
     <!--============================= FOOTER =============================-->
     <%- include('partials/footer') %>

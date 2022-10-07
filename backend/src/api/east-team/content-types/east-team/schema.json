@@ -25,6 +25,10 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "lecturer_qualification": {
+      "type": "string",
+      "default": "MBA "
     }
   }
 }

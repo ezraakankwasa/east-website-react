@@ -44,6 +44,10 @@
     "course_price": {
       "type": "biginteger",
       "default": "100000"
+    },
+    "course_duration": {
+      "type": "integer",
+      "default": 1
     }
   }
 }
