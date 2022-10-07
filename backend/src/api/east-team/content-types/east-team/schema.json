@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "east_teams",
+  "info": {
+    "singularName": "east-team",
+    "pluralName": "east-teams",
+    "displayName": "East Team",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "lecturer_name": {
+      "type": "string"
+    },
+    "lecturer_about": {
+      "type": "richtext"
+    },
+    "lecturer_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

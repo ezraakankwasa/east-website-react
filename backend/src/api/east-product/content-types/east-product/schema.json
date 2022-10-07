@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "east_products",
+  "info": {
+    "singularName": "east-product",
+    "pluralName": "east-products",
+    "displayName": "east_product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "product_name": {
+      "type": "string"
+    },
+    "product_price": {
+      "type": "biginteger"
+    },
+    "product_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

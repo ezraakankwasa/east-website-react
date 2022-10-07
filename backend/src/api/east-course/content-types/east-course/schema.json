@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "east_courses",
+  "info": {
+    "singularName": "east-course",
+    "pluralName": "east-courses",
+    "displayName": "East Course",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "course_title": {
+      "type": "string"
+    },
+    "course_description": {
+      "type": "richtext"
+    },
+    "short_description": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "course_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "course_video": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "course_price": {
+      "type": "biginteger",
+      "default": "100000"
+    }
+  }
+}
