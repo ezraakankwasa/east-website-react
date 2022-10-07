@@ -7,7 +7,6 @@ singleRouter.get('/:id', async(req, res) => {
     try
     {
         const courseAPI = await axios.get(`http://localhost:1337/api/east-courses/${courseID}`);
-        console.log(courseAPI.data.data.attributes)
         res.render('course-detail', { course : courseAPI.data.data.attributes});
     }
     catch (error)
